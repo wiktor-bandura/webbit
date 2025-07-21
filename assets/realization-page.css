@@ -1,0 +1,74 @@
+.mockup-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    padding: 45px 15px;
+    border-bottom: 10px solid #fff;
+}
+
+.mockup-big > .mockup-wrapper {
+      max-width: 1245px;
+      margin: 0 auto;
+}
+
+.mockup-big-double > .mockup-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1540px;
+    width: 100%;
+}
+
+.mockup-big-triple > .mockup-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    max-width: 1310px;
+    width: 100%;
+}
+
+.mockup-big--grey {
+    background-color: #F7F7F7;
+}
+
+.mockup__image {
+    max-width: 100%;
+}
+
+.prev-and-next-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    min-height: 115px;
+}
+
+.prev-and-next-project__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.prev-project, .next-project {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 991px) {
+    .mockup-big {
+        padding: 145px 15px;
+        border-bottom: 20px solid #fff;
+    }
+
+    .prev-project, .next-project {
+        font-size: 20px;
+    }
+
+    .prev-and-next-project {
+        min-height: 185px;
+    }
+}
