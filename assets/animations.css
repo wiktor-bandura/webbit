@@ -2,37 +2,37 @@
 
     0%,
     11.90% {
-        transform: translateY(calc(var(--item-height) * -9));
+        transform: translateY(calc((var(--item-height) + 10px) * -9));
     }
 
     14.28%,
     26.19% {
-        transform: translateY(calc(var(--item-height) * -8));
+        transform: translateY(calc((var(--item-height) + 10px) * -8));
     }
 
     28.57%,
     40.47% {
-        transform: translateY(calc(var(--item-height) * -7));
+        transform: translateY(calc((var(--item-height) + 10px) * -7));
     }
 
     42.85%,
     54.76% {
-        transform: translateY(calc(var(--item-height) * -6));
+        transform: translateY(calc((var(--item-height) + 10px) * -6));
     }
 
     57.14%,
     69.04% {
-        transform: translateY(calc(var(--item-height) * -5));
+        transform: translateY(calc((var(--item-height) + 10px) * -5));
     }
 
     71.42%,
     83.33% {
-        transform: translateY(calc(var(--item-height) * -4));
+        transform: translateY(calc((var(--item-height) + 10px) * -4));
     }
 
     85.71%,
     97.62% {
-        transform: translateY(calc(var(--item-height) * -3));
+        transform: translateY(calc((var(--item-height) + 10px) * -3));
     }
 
     100% {
