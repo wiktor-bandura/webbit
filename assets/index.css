@@ -195,7 +195,7 @@ img {
 .container {
     position: relative;
     max-width: 600px;
-    height: calc(var(--scroll-height) + var(--item-height) + 10px);
+    height: 108px;
     overflow: hidden;
 }
 
@@ -226,7 +226,7 @@ img {
 }
 
 .slider {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .slider__wrapper {
@@ -598,7 +598,9 @@ img {
         position: relative;
     }
 
-
+    .container {
+        height: 147px;
+    }
 
     .navigation__link::after {
         z-index: -1;
@@ -608,8 +610,8 @@ img {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         background-color: #F8BDC4;
         opacity: 0;
         transition: .3s ease;
