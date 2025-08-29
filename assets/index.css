@@ -78,7 +78,9 @@ body {
     height: 100svh;
     background-color: #161616;
     z-index: 33;
-    display: none;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: .4s ease-in-out;
 }
 
 .navigation__mobile-close-button {
@@ -161,7 +163,6 @@ img {
     font-size: 26px;
     font-weight: 300;
     display: block;
-    margin-bottom: 10px;
 }
 
 .hero__content {
@@ -176,11 +177,15 @@ img {
     line-height: 160%;
     flex: 1;
     min-width: 200px;
+}
+
+.hero__content-item>h3 {
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .hero__content-item>p {
+    font-weight: 300;
     color: var(--color-gray);
     margin: 0;
 }
@@ -215,7 +220,7 @@ img {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: calc(72px);
+    height: 100%;
     width: 100%;
     background: linear-gradient(transparent, #fff);
 }
@@ -330,6 +335,10 @@ img {
     padding: 0 20px;
     max-width: 1500px;
     margin: 0 auto;
+}
+
+.realizations--desktop {
+    padding-top: 170px;
 }
 
 .realizations--subpage {
@@ -581,6 +590,33 @@ img {
         height: auto;
         background-color: transparent;
         display: block;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .navigation__link {
+        position: relative;
+    }
+
+
+
+    .navigation__link::after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #F8BDC4;
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    .navigation__link:hover::after {
+        opacity: 1;
     }
 
     .navigation__mobile-button {
@@ -683,10 +719,6 @@ img {
 
     }
 
-    .top__title--small {
-        margin-bottom: 20px;
-    }
-
     /* ABOUT PAGE */
 
     .wide-image {
@@ -695,6 +727,7 @@ img {
 
     .top__title {
         font-size: 60px;
+        line-height: 140%;
     }
 }
 
@@ -710,4 +743,9 @@ img {
 
 .text-red {
     color: var(--color-red);
+}
+
+.slideInMenu {
+    transform: translateY(0);
+    opacity: 1;
 }
