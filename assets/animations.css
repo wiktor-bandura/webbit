@@ -1,183 +1,246 @@
-@-webkit-keyframes stepScroll {
- 0%, 2% {
-    transform: translateY(calc(var(--item-height) * 0));
+@keyframes mobileStepScroll {
+
+  0%,
+  11.25% {
+    transform: translateY(0px);
   }
 
-  /* TRANSITION 1→2: 2–12.25% (interpolacja od 0 do -1) */
-
-  /* HOLD 2: pozycja –1 przez 12.25–14.25% */
-  12.25%, 14.25% {
-    transform: translateY(calc(var(--item-height) * -1));
+  12.5% {
+    transform: translateY(-36px);
   }
 
-  /* TRANSITION 2→3: 14.25–24.5% */
-
-  /* HOLD 3: pozycja –2 przez 24.5–26.5% */
-  24.5%, 26.5% {
-    transform: translateY(calc(var(--item-height) * -2));
+  12.5%,
+  23.75% {
+    transform: translateY(-36px);
   }
 
-  /* TRANSITION 3→4: 26.5–36.75% */
-
-  /* HOLD 4: pozycja –3 przez 36.75–38.75% */
-  36.75%, 38.75% {
-    transform: translateY(calc(var(--item-height) * -3));
+  25% {
+    transform: translateY(-72px);
   }
 
-  /* TRANSITION 4→5: 38.75–49% */
-
-  /* HOLD 5: pozycja –4 przez 49–51% */
-  49%, 51% {
-    transform: translateY(calc(var(--item-height) * -4));
+  25%,
+  36.25% {
+    transform: translateY(-72px);
   }
 
-  /* TRANSITION 5→6: 51–61.25% */
-
-  /* HOLD 6: pozycja –5 przez 61.25–63.25% */
-  61.25%, 63.25% {
-    transform: translateY(calc(var(--item-height) * -5));
+  37.5% {
+    transform: translateY(-108px);
   }
 
-  /* TRANSITION 6→7: 63.25–73.5% */
-
-  /* HOLD 7: pozycja –6 przez 73.5–75.5% */
-  73.5%, 75.5% {
-    transform: translateY(calc(var(--item-height) * -6));
+  37.5%,
+  48.75% {
+    transform: translateY(-108px);
   }
 
-  /* TRANSITION 7→8: 75.5–85.75% */
-
-  /* HOLD 8: pozycja –7 przez 85.75–87.75% */
-  85.75%, 87.75% {
-    transform: translateY(calc(var(--item-height) * -7));
+  50% {
+    transform: translateY(-144px);
   }
 
-  /* TRANSITION 8→9: 87.75–98% */
+  50%,
+  61.25% {
+    transform: translateY(-144px);
+  }
 
-  /* HOLD 9: pozycja –8 przez 98–100% */
-  98%, 100% {
-    transform: translateY(calc(var(--item-height) * -8));
+  62.5% {
+    transform: translateY(-180px);
+  }
+
+  62.5%,
+  73.75% {
+    transform: translateY(-180px);
+  }
+
+  75% {
+    transform: translateY(-216px);
+  }
+
+  75%,
+  86.25% {
+    transform: translateY(-216px);
+  }
+
+  87.5% {
+    transform: translateY(-252px);
+  }
+
+  87.5%,
+  98.75% {
+    transform: translateY(-252px);
+  }
+
+  100% {
+    transform: translateY(-288px);
   }
 }
+
+@-webkit-keyframes stepScroll {
+
+  0%,
+  9% {
+    transform: translateY(0px);
+  }
+
+  12.5% {
+    transform: translateY(-49px);
+  }
+
+  12.5%,
+  21.5% {
+    transform: translateY(-49px);
+  }
+
+  25% {
+    transform: translateY(-98px);
+  }
+
+  25%,
+  34% {
+    transform: translateY(-98px);
+  }
+
+  37.5% {
+    transform: translateY(-147px);
+  }
+
+  37.5%,
+  46.5% {
+    transform: translateY(-147px);
+  }
+
+  50% {
+    transform: translateY(-196px);
+  }
+
+  50%,
+  59% {
+    transform: translateY(-196px);
+  }
+
+  62.5% {
+    transform: translateY(-245px);
+  }
+
+  62.5%,
+  71.5% {
+    transform: translateY(-245px);
+  }
+
+  75% {
+    transform: translateY(-294px);
+  }
+
+  75%,
+  84% {
+    transform: translateY(-294px);
+  }
+
+  87.5% {
+    transform: translateY(-343px);
+  }
+
+  87.5%,
+  96.5% {
+    transform: translateY(-343px);
+  }
+
+  100% {
+    transform: translateY(-392px);
+  }
+}
+
+
 @keyframes stepScroll {
- /* 0%,
-    11.90% {
-        transform: translateY(calc(var(--item-height) * -8));
-    }
 
-    14.28%,
-    26.19% {
-        transform: translateY(calc(var(--item-height) * -7));
-    }
-
-    28.57%,
-    40.47% {
-        transform: translateY(calc(var(--item-height) * -6));
-    }
-
-    42.85%,
-    54.76% {
-        transform: translateY(calc(var(--item-height) * -5));
-    }
-
-    57.14%,
-    69.04% {
-        transform: translateY(calc(var(--item-height) * -4));
-    }
-
-    71.42%,
-    83.33% {
-        transform: translateY(calc(var(--item-height) * -3));
-    }
-
-    85.71%,
-    97.62% {
-        transform: translateY(calc(var(--item-height) * -2));
-    }
-
-    100% {
-       transform: translateY(calc(var(--item-height) * -1));
-    } */
- /* HOLD 1: pozycja 0 przez 0–2% */
-  0%, 2% {
-    transform: translateY(calc(var(--item-height) * 0));
+  0%,
+  9% {
+    transform: translateY(0px);
   }
 
-  /* TRANSITION 1→2: 2–12.25% (interpolacja od 0 do -1) */
-
-  /* HOLD 2: pozycja –1 przez 12.25–14.25% */
-  12.25%, 14.25% {
-    transform: translateY(calc(var(--item-height) * -1));
+  12.5% {
+    transform: translateY(-49px);
   }
 
-  /* TRANSITION 2→3: 14.25–24.5% */
-
-  /* HOLD 3: pozycja –2 przez 24.5–26.5% */
-  24.5%, 26.5% {
-    transform: translateY(calc(var(--item-height) * -2));
+  12.5%,
+  21.5% {
+    transform: translateY(-49px);
   }
 
-  /* TRANSITION 3→4: 26.5–36.75% */
-
-  /* HOLD 4: pozycja –3 przez 36.75–38.75% */
-  36.75%, 38.75% {
-    transform: translateY(calc(var(--item-height) * -3));
+  25% {
+    transform: translateY(-98px);
   }
 
-  /* TRANSITION 4→5: 38.75–49% */
-
-  /* HOLD 5: pozycja –4 przez 49–51% */
-  49%, 51% {
-    transform: translateY(calc(var(--item-height) * -4));
+  25%,
+  34% {
+    transform: translateY(-98px);
   }
 
-  /* TRANSITION 5→6: 51–61.25% */
-
-  /* HOLD 6: pozycja –5 przez 61.25–63.25% */
-  61.25%, 63.25% {
-    transform: translateY(calc(var(--item-height) * -5));
+  37.5% {
+    transform: translateY(-147px);
   }
 
-  /* TRANSITION 6→7: 63.25–73.5% */
-
-  /* HOLD 7: pozycja –6 przez 73.5–75.5% */
-  73.5%, 75.5% {
-    transform: translateY(calc(var(--item-height) * -6));
+  37.5%,
+  46.5% {
+    transform: translateY(-147px);
   }
 
-  /* TRANSITION 7→8: 75.5–85.75% */
-
-  /* HOLD 8: pozycja –7 przez 85.75–87.75% */
-  85.75%, 87.75% {
-    transform: translateY(calc(var(--item-height) * -7));
+  50% {
+    transform: translateY(-196px);
   }
 
-  /* TRANSITION 8→9: 87.75–98% */
+  50%,
+  59% {
+    transform: translateY(-196px);
+  }
 
-  /* HOLD 9: pozycja –8 przez 98–100% */
-  98%, 100% {
-    transform: translateY(calc(var(--item-height) * -8));
+  62.5% {
+    transform: translateY(-245px);
+  }
+
+  62.5%,
+  71.5% {
+    transform: translateY(-245px);
+  }
+
+  75% {
+    transform: translateY(-294px);
+  }
+
+  75%,
+  84% {
+    transform: translateY(-294px);
+  }
+
+  87.5% {
+    transform: translateY(-343px);
+  }
+
+  87.5%,
+  96.5% {
+    transform: translateY(-343px);
+  }
+
+  100% {
+    transform: translateY(-392px);
   }
 }
 
 
 @-webkit-keyframes infiniteSlider {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(calc(-4 * var(--item-width) - 4*var(--item-gap)));
-    }
+  100% {
+    transform: translateX(calc(-4 * var(--item-width) - 4*var(--item-gap)));
+  }
 }
 
 @keyframes infiniteSlider {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(calc(-4 * var(--item-width) - 4*var(--item-gap)));
-    }
+  100% {
+    transform: translateX(calc(-4 * var(--item-width) - 4*var(--item-gap)));
+  }
 }
-
