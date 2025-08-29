@@ -1,10 +1,11 @@
-const scrollList = document.querySelector('.scroll-list')
-const items = Array.from(scrollList.children)
+const burgerButton = document.querySelector('.navigation__mobile-button');
+const navigationWrapper = document.querySelector('.navigation__wrapper');
 
-window.addEventListener('load', () => {
-   items.forEach((item) => {
-      const clone = item.cloneNode(true)
-      clone.setAttribute('aria-hidden', 'true')
-      scrollList.appendChild(clone)
-   })
-})
+burgerButton.addEventListener('click', () => {
+   navigationWrapper.style.display = 'block';
+
+   const closeButton = document.querySelector('.navigation__mobile-close-button');
+   closeButton.addEventListener('click', () => {
+      navigationWrapper.style.display = 'none';
+   });
+});
