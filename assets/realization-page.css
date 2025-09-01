@@ -7,12 +7,12 @@
     border-bottom: 10px solid #fff;
 }
 
-.mockup-big > .mockup-wrapper {
-      max-width: 1245px;
-      margin: 0 auto;
+.mockup-big>.mockup-wrapper {
+    max-width: 1245px;
+    margin: 0 auto;
 }
 
-.mockup-big-double > .mockup-wrapper {
+.mockup-big-double>.mockup-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,7 +21,7 @@
     width: 100%;
 }
 
-.mockup-big-triple > .mockup-wrapper {
+.mockup-big-triple>.mockup-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,9 +30,6 @@
     width: 100%;
 }
 
-.mockup-big--grey {
-    background-color: #F7F7F7;
-}
 
 .mockup__image {
     max-width: 100%;
@@ -51,7 +48,8 @@
     gap: 20px;
 }
 
-.prev-project, .next-project {
+.prev-project,
+.next-project {
     color: #000;
     text-decoration: none;
     font-weight: 600;
@@ -64,11 +62,25 @@
         border-bottom: 20px solid #fff;
     }
 
-    .prev-project, .next-project {
+    .prev-project,
+    .next-project {
         font-size: 20px;
     }
 
     .prev-and-next-project {
         min-height: 185px;
     }
+}
+
+
+.mockup-big--grey {
+    background-color: #F7F7F7;
+}
+
+.mockup-big--ocean {
+    background-color: #e6f0f4 !important;
+}
+
+.mockup-big--light {
+    background-color: #F3F5F8;
 }
