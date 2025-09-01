@@ -124,6 +124,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 80px;
 }
 
 .navigation__item>a {
@@ -338,7 +339,7 @@ img {
 }
 
 .realizations--desktop {
-    padding-top: 170px;
+    padding-top: 30px;
 }
 
 .realizations--subpage {
@@ -633,6 +634,7 @@ img {
         flex-direction: row;
         align-items: center;
         gap: 70px;
+        margin-top: 1rem;
     }
 
     .navigation__item>a {
@@ -678,6 +680,10 @@ img {
 
     .realizations__show-all {
         margin-top: 100px;
+    }
+
+    .realizations--desktop {
+        padding-top: 170px;
     }
 
     .realizations--subpage {
